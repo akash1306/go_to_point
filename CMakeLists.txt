@@ -134,6 +134,13 @@ include_directories(
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/go_to_point.cpp
 # )
+add_executable(ToPoint src/to_the_point.cpp)
+target_link_libraries(ToPoint ${catkin_LIBRARIES}
+${Eigen_LIBRARIES}
+)
+
+
+
 include_directories(
   include/include_directories(
   include/go_to_point
